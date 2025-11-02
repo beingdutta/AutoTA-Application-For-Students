@@ -1,6 +1,7 @@
 # AutoTA
 
 Code Enhanced and Feature added from the repo: https://github.com/sourjyadip/autota
+
 Original credits to: https://github.com/sourjyadip/autota
 
 AutoTA is an interface for interacting with educational lecture videos.
