@@ -1,0 +1,379 @@
+,text,start,duration
+0,"We talked about. So, we started with the sorting
+algorithms sorting problems. So, what is the",17.56,5.9
+0,"problem of sorting? So, we have given n numbers
+say input is a number a 1, a 2, a n. So, typically",23.46,21.16
+0,"they are integers we can deal with real numbers
+also in we have to deal with real number operation,",44.62,7.23
+0,"but these are typically integer we have a
+we have given array of n numbers then the",51.85,5.26
+0,"output will be the permutation of numbers,
+the permutation of this number A i 1, A i",57.11,18.38
+0,"2, A i n such that if it is sorting such that
+it is sort with.",75.49,19.941
+0,"So, there are factorial in permutation. So,
+among these we have to choose all of one permutation",95.431,5.169
+0,"that was which is giving the sorted array.
+So, this will be the output of any sorting",100.6,8.189
+0,"algorithm. So, this is in ascending order.
+So, now, for example, if we have say input",108.789,8.01
+0,like this.,116.799,4.541
+0,"So, if we have input say 6 3 2 9 7 10 11 suppose
+this is our input. So, we have 1 2 3 4 5 6",121.34,23.42
+0,"7 we have 7 you have 7 elements. So, you have
+a array of 7 element. So, you have 1 is to",144.76,3.99
+0,"7. So, then the after sorting output will
+be the sorted one. So, it is basically a permutation",148.75,8.12
+0,"on it. So, 2 comma, 3 comma, 6 comma, 7 comma
+9.",156.87,10.899
+0,"So, we should get this to be a permutation
+which is sorted. So, this is the output of",167.769,7.61
+0,"this should be the output of any sorting algorithm.
+So, we will talk about, we will discuss some",175.379,6.571
+0,"sorting algorithm, which we will which by
+which we should able to get this output. So,",181.95,8.47
+0,"we start with insertion sort. So, we talk
+about a sorting algorithm which is called",190.42,16.73
+0,"insertion sort. So, this is the name of the
+algorithm.",207.15,6.64
+0,"Now, what is the input? Input is n numbers.
+So, suppose you are taking the number is in",213.79,7.49
+0,"array. So, this is the input.",221.28,3.129
+0,"So, we have a array of n numbers. So, 1 2.
+So, our array is starting from 1 to n, not",224.409,11.17
+0,"zero to n minus 1 like in c language, you
+are not dealing with any specific language.",235.579,5.711
+0,"So, that is why we start our array with 1
+to n. So, we have a n numbers and we need",241.29,6.63
+0,"to sort this numbers. So, we have to write
+how we will do that that description you have",247.92,7.769
+0,"write. So, that description either we can
+write in English form that do a we do these",255.689,6.731
+0,"do this like this English form or we will
+write something in a compact way.",262.42,4.93
+0,"So, precise form. So, that form is called
+pseudo code. So, we will write pseudo code",267.35,6.789
+0,"for this. So, what we do. So, we first start
+with a J loop, J is starting from 2 to n and",274.139,13.721
+0,"then we take the key a J into the key. So,
+this is the A J value. So, or this loop is",287.86,9.86
+0,"starting from 2 to n. So, J is starting from
+here and. So, this is the second step and",297.72,8.169
+0,"we choice i to be J minus 1. So, i is pointing.
+So, i is starting with J minus 1 ok.",305.889,9.06
+0,"Now,. So, what we want, we want this is the
+we want at some point of time J will be pointing",314.949,9.601
+0,"here and this is our key, now we want this
+part will be sorted this is the loop invariant",324.55,10.19
+0,"the outer loop invariant we want this we want
+this invariant that throughout our loop this",334.74,9.38
+0,"property will satisfy wherever J will be pointing,
+but before that the sub array up to this is",344.12,9.229
+0,"sorted ok.
+Now, we have to find the this is the new element",353.349,5.341
+0,"this is now new j. So, now, if now this is
+our i. So, i is J minus 1 this is our i. Now",358.69,11.599
+0,"if key is greater than A i then we can just
+increase J by 1 there is no problem, then",370.289,7.28
+0,"J will be pointing this 1 and up to this it
+is sorted because this is greater than this.",377.569,5.581
+0,"So, all the problem will occur if this key
+value if this key is less than this, then",383.15,7.859
+0,"we need to find the position of this by shifting
+this 1 by 1 and each time we must compare",391.009,7.081
+0,"with the key value with this values. So, that
+we are going to write and this will continue",398.09,6.31
+0,"until i is equal to 0; if i is equal to 0
+you must of because there is nothing to compare.",404.4,5.38
+0,"So, that will write here. So, this is basically
+while i is greater than zero this is 1 condition",409.78,9.169
+0,"and so, and if the key is greater than A i
+we need to do if key is greater than A i then",418.949,16.331
+0,"we can just increase J and that will be taking
+care by this loop.",435.28,3.01
+0,"But only thing if k is less than A i then
+we have a problem, then what we do then we",438.29,12.61
+0,"just do like this. So, we shift this by 1.
+So, i will be shifted this. So, A i plus 1",450.9,9.92
+0,"will be copied to A i 
+and i is decreased by i minus 1.",460.82,11.44
+0,"So, we shift this guy here. So, we already
+stored this value into the key A J, now we",472.26,7.689
+0,"shift this here and now i is pointing the
+next one. So, now, i is pointing the next",479.949,8.09
+0,"one, now we compare this with the now we compare
+this with the i this value with the key. If",488.039,10.611
+0,"the this value is greater than they we will
+put this key here otherwise we will keep on",498.65,4.91
+0,"do like this. So, this is the step and. So,
+this will continue like this 5 6 and at 7",503.56,10.82
+0,"we just put A i plus 1 we assign this value
+the key that is it. So, this is the; this",514.38,9.33
+0,"is what is called pseudo code for this. So,
+the description we have written is called",523.71,7.34
+0,"this is called pseudo code this is basically
+the description what we are doing.",531.05,8.849
+0,"So, this is not the English description, it
+is very precise way we just write what we",539.899,5.701
+0,"want to do in this algorithm. So, in this
+you, so this is called pseudo code this is",545.6,7.03
+0,"if you give this code to any programmer, programmer
+can easily runs this code in their own computer",552.63,6.73
+0,"language like C, C++, Java anything. So, this
+is the code now as we see we want to take",559.36,9.52
+0,"an example how it is running and let us just
+recall again what we are doing.",568.88,11.639
+0,"So, this is the i. So, this is 1 2 up to n
+this is the a array, now we are starting J",580.519,9.19
+0,"with this guy this is the J and i is point
+here i is J minus 1 because if we start like",589.709,8.041
+0,"this then this is 1 element this is already
+sorted.",597.75,2.529
+0,"Now, loop invariant is. So, J will be pointing
+at somewhere this is the J, now this is sorted",600.279,8.541
+0,"this is the loop invariant now this is our
+key now this is our i A i, this is i J minus",608.82,9.49
+0,"1, i is J minus 1. Now if the key is greater
+than i then no need to do anything we can",618.31,6.0
+0,"just increased J by 1 by this for loop that
+is it, but the problem is if key is less than",624.31,5.86
+0,"A i, if key is less than A i what we do? We
+shift this one’s position then we check",630.17,6.95
+0,"the key with this if this is greater than
+we put key here otherwise we keep on shifting",637.12,6.5
+0,"this like this until we reach to the end if
+we reach to the end we put the keys here otherwise",643.62,6.43
+0,"we will the key in a suitable position.
+So, that is the loop invariant we are we must",650.05,6.3
+0,"loop in our algorithm. So, let us execute
+this by taking an example. So, let us take",656.35,16.77
+0,"an example. So, suppose we have a given from
+inputs.",673.12,5.0
+0,"So, 6 9 7 2 3 11 10 and 1 suppose this is
+our input this is the given array and we need",678.12,15.75
+0,"to sort this array, this is the given array
+there are how many element. So, 1 2 3 4 5",693.87,8.339
+0,"6 7 8 there are 8 elements a 1, a 2, a 8 we
+need to sort it. So, we need to we are going",702.209,7.12
+0,"to execute this piece of code insertion sort.
+So, what we do? We start with J from 2 to",709.329,9.07
+0,"n. So, J is pointing here. So, this is our
+key and i will be pointing J minus 1 i is",718.399,7.591
+0,"pointing here, now we compare 9 with 6 now
+6 is greater 9 is greater than 9. So, you",725.99,6.58
+0,"do not need to do anything. So, we just increase
+J by 1 and that will be taking care by that",732.57,5.27
+0,"for loop this loop now again this is out key
+now we compare this with this now this is",737.84,8.33
+0,"again greater than. So, we point this now
+this is out key now i is this 1 sorry no i",746.17,10.54
+0,"will be the next point. So, i is pointing
+J minus 1. So, every time i is J minus 1.",756.71,5.12
+0,"So, i is pointing here sorry. So, this will
+also change sorry. So, let us just execute",761.83,8.61
+0,"from the beginning. So, this is i is pointing
+here. So, if first of all J is pointing here.",770.44,6.269
+0,"So, i is pointing here. So, this is greater
+than. So, J will be now pointing here, if",776.709,5.221
+0,"J is pointing here now this is our i. Now
+we have a problem because this is the key",781.93,9.02
+0,"and this is less than this a i. So, if it
+is less than what we do? We shift this 1 position",790.95,8.829
+0,"this is 9 and this is 6 now this is our i
+1 now we compare this with the keys 7 this",799.779,8.601
+0,"is greater than. So, we stop this inner loop
+and we put this key to be A i plus 1. So,",808.38,9.4
+0,"key will be putted here like this. So, 3 1.
+So, now, J is pointing here. So, this is by",817.78,9.929
+0,"the outer for loop ok.
+Now, if J is pointing here now i will be here",827.709,10.921
+0,"now here again we have a problem this is the
+key and this key is less than a i. So, if",838.63,6.54
+0,"key is less than A i what we need to do we
+need to do shift this, and then i is pointing.",845.17,6.63
+0,"So, we have to shift this then 7 this now
+i is pointing here. So, again we compare this",851.8,8.529
+0,"this is the key again we compare key with
+the new A i this is a again less than. So,",860.329,6.341
+0,"again we need to shift this by 1. So, again
+7 6 7 will come here and i is decreased by",866.67,6.51
+0,"1 i is pointing here.
+So, again we have to compare this A i with",873.18,5.61
+0,"the key this is key is less than. So, again
+we need to shift this by 1 and now i is zero",878.79,9.85
+0,"now we must stop this if i is 0. So, we stop
+since i is 0 and we put this key as A i plus",888.64,7.55
+0,"1 i is 0. So, A i plus 1 is 1. So, you put
+this 2 here. So, now, this is our now J is",896.19,9.319
+0,"pointing here now if we observe this loop
+invariant. So, wherever J is pointing before",905.509,8.131
+0,"that this part is sorted this is the loop
+invariant do we want before that this part",913.64,7.17
+0,"is sorted and this is our new element to insert
+in the sorted array. So, these we have to",920.81,5.49
+0,"insert by looking at the position. So, we
+will shift 1 by 1 until we get the position",926.3,5.24
+0,"of this new entry the key ok.
+So, this is now our key. So, let us just 2",931.54,9.78
+0,"6 7 9. So, this is our key and this is our
+i, now we compare this key with A i now still",941.32,9.379
+0,"key is less than. So, we have to shift 9 here
+and 7 6 2 now i is pointing here, now again",950.699,10.211
+0,"we compare key with A i again still it is
+greater A i is greater. So, we shift this",960.91,6.599
+0,"7 here and i is pointing here, now again 6
+is greater. So, 6 will be shifted here now",967.509,6.891
+0,"i is pointing here now key is now key is greater
+than 2. So, we must stop this loop if key",974.4,11.13
+0,"is greater than 2 if key is greater than A
+i and then we insert. So, i is this. So, insert",985.53,5.82
+0,"the key into A i plus 1. So, i is 1 A i plus
+1 is 2. So, you must insert this 3 over here.",991.35,7.81
+0,"Now, this is 11 10 1. So, far now this is
+our J. So, now, J is pointing here now this",999.16,13.489
+0,"is our i, now we compare this two. So, this
+is our key now here we are lucky because this",1012.649,11.871
+0,"key is greater than this A i and this part
+is already sorted. So, you do not need to",1024.52,5.86
+0,"do anything this i will be automatically increased
+by 1 by this for loop. So, now,. So, this",1030.38,7.16
+0,"is this is no change. So, now, this is our
+i and this is our is this is our J, J will",1037.54,7.29
+0,"be automatically increase by this for loop
+sorry. So, this is our J now this is our i",1044.83,5.23
+0,"now because i is always J minus 1 ok.
+So, now i is this now this is our key now",1050.06,10.01
+0,"we compare this now this key is less than
+a i. So, we need to do something. So, we just",1060.07,7.65
+0,"shift this by 1 and so 9 7 6 3 2. So, now,
+i is pointing here. So, if i is pointing here",1067.72,15.56
+0,"this is the key. So, we compare this key with
+this 9 and this key is greater than. So, we",1083.28,6.9
+0,"put this 10 over here. So, this is 1 now J
+is pointing here this is the now if you see",1090.18,8.94
+0,"the wherever J is pointing. So, all the element
+up to that is before that it is sorted, now",1099.12,5.42
+0,"we in the thing is we need to find the position
+for this guy this is our now key. So, this",1104.54,10.17
+0,"is the key now what we do now this is our
+i, now we compare this 1 is less than this.",1114.71,9.7
+0,"So, we have to shift this here and then i
+will be pointing here now we compare this",1124.41,7.93
+0,"again this is less. So, we have to shift this
+here.",1132.34,3.62
+0,"So, i is pointing here again it is this we
+have to shift this here like this 7 6 3 2",1135.96,9.23
+0,"and now i is pointing 0. So, once i is pointing
+0 we stop and we put this 1 to be here. So,",1145.19,9.73
+0,"this is the final step of our code and. So,
+this is sorted this is sorted. So, but you",1154.92,15.1
+0,"see the we will talk about runtime of this
+algorithm how much time is it is taking by",1170.02,5.12
+0,"this algorithm that is called running time,
+how much time it will take to run this code",1175.14,5.23
+0,"in our computer. So, that is called runtime
+or the time complexity. So, we will talk about",1180.37,5.81
+0,"that we will talk about the run time that
+is the analysis part of any algorithm ok.",1186.18,5.75
+0,"So, this is the input this is the output this
+is sorted. So, if we talk about runtime if",1191.93,8.21
+0,"you see here for this 10, we have just moving
+1 position for this 11 we are not doing anything",1200.14,8.17
+0,"just 1 comparison, but for this 1 if you see
+1 as to come a long way to the beginning.",1208.31,7.13
+0,"So, 1 has to compare with everybody. So, 1
+has to come long way to the beginning.",1215.44,6.9
+0,"So, from there we can think that the run time
+will depend on what. So, runtime depend on",1222.34,9.14
+0,"the input. So, we will talk about runtime,
+runtime of our algorithm run time of the insertion",1231.48,10.29
+0,"sort.
+So, runtime means time taking by time taking",1241.77,15.83
+0,"to run this code. So, this runtime will depend
+on what? It depends on few things first one",1257.6,18.24
+0,"is size of the input see if you have to sort
+10 numbers and if we have to sort 10,000 numbers;",1275.84,13.32
+0,"obviously, 10,000 number will take more time
+than 10 numbers. So, runtime; obviously, will",1289.16,5.94
+0,"depend on the input size that n. So, runtime
+will depend on the n. So, we want to. So,",1295.1,10.53
+0,"run time is a function of n. So, we want to
+parameterize the run time by n. So, you want",1305.63,6.31
+0,"to fix this n then you want to talk about
+the run time. So, we want 2 parameters since",1311.94,4.25
+0,"it is a function of n because; obviously,
+if number of input is more than the time to",1316.19,7.58
+0,"sort will be more ok.
+So, we will parameterize this by n. So, that",1323.77,6.03
+0,"is T n is the run time for our code runtime
+with when the input size is n with n input.",1329.8,10.86
+0,"So, we fix n then this is a function this
+is denoted by T n. So, T n is our runtime",1340.66,9.13
+0,"for n input where n is fixed. So, we fix the
+size of the input. Now once you fix the size",1349.79,7.93
+0,"of the input then the for our insertion sort
+runtime will depend on what here if you see",1357.72,7.9
+0,"this one for example, if our input is this
+input say now for this eleven which was not",1365.62,8.06
+0,"doing anything just 1 comparison, but for
+this one we have to come long way to the beginning.",1373.68,6.59
+0,"So, runtime will depend on the input pattern
+ok.",1380.27,4.2
+0,"So, if the array is sorted if the input is
+already sorted then it will take less time,",1384.47,12.83
+0,"and if the input is reverse sorted then it
+will take more time reverse sorted means everybody",1397.3,5.1
+0,"has to come for to the beginning in each step
+each for loop. So, it will depend on the input.",1402.4,8.23
+0,"So, if the input is sorted then the time will
+take less because if the input is sorted say",1410.63,11.92
+0,"for example, if our input is.",1422.55,4.0
+0,"So, if our input is 4 6 7 9 10 12 if this
+is our input which is already sorted array,",1426.55,13.58
+0,"then if you run the insertion sort we just
+compare this with this stop this with this",1440.13,5.9
+0,"stop like this.
+So, this is the this is easier to sort I mean",1446.03,4.671
+0,"this will take less time than if the input
+is say reverse sorted say if we have this",1450.701,6.509
+0,"input 9, 6, 5, 3, 2, 1 if the input is reverse
+sorted if the input is this, then everybody",1457.21,11.05
+0,"has to come forward then it is the time the
+time will take more. So, this runtime will",1468.26,7.55
+0,"depend on the input pattern, in the sense
+that a sorted array already sorted array a",1475.81,15.45
+0,"sorted array is easier to sort will take less
+time in sorted array less time than then if",1491.26,15.42
+0,"we if the array is reverse sort it will take
+more time, then the reverse sorted array.",1506.68,13.22
+0,"So, runtime will depend on the pattern of
+the input. So, if we sort if a array is already",1519.9,9.52
+0,"sorted then it will take less time if a array
+is reverse sorted it will take more time because",1529.42,5.67
+0,"everybody has to come forward in that case.
+So, based on this, we will talk about 3 types",1535.09,8.04
+0,"of analysis, worst case, best case and average
+case analysis. So, this will depend on for",1543.13,9.3
+0,"insertion sort it will depend on the pattern
+of the input. So, we will do the types of",1552.43,15.62
+0,analysis.,1568.05,1.92
+0,"So, first one is worst case. So, worst case
+means it is taking more time maximum time",1569.97,13.63
+0,"T n is taking. So, we will talk more details
+in the next class. So, it is taking more time",1583.6,5.82
+0,"maximum time it is taking by our code and
+the best case worst case for insertion sort",1589.42,8.18
+0,"is if the input is reverse sorted then it
+is taking maximum time and the best cases",1597.6,6.3
+0,"is if the input for insertion sort if the
+input is already sorted, then we are we are",1603.9,5.89
+0,"having the we are spending the less time to
+sort it and there is another case which is",1609.79,7.54
+0,"called average case average case means if
+we assume the on an average how much time",1617.33,7.1
+0,"it is taking, but it should be some expected
+expectation. So, for expectation may be we",1624.43,5.12
+0,"need to take some distribution of the input
+pattern and then we talk about the expectation.",1629.55,5.54
+0,"So, this we will discuss in the next class.
+Thank you.",1635.09,4.14

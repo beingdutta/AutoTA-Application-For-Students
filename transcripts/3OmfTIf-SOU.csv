@@ -1,0 +1,166 @@
+,text,start,duration
+0,"- [Instructor] You've
+broken your program down",0.15,1.14
+0,"into functions, but now maybe
+you have 100's of functions,",1.29,3.63
+0,"and a team of programmers
+is in there every day",4.92,2.94
+0,making changes to the code.,7.86,2.04
+0,"With all of these moving
+pieces, how is it possible",9.9,2.64
+0,that this program isn't constantly broken?,12.54,2.67
+0,The secret? Testing.,15.21,2.04
+0,"Tests can come in many forms,",17.25,2.01
+0,"like performance tests
+or end-to-end tests.",19.26,2.61
+0,But the most common is unit testing.,21.87,2.73
+0,"Unit tests test a single unit
+of functionality at a time.",24.6,3.81
+0,"In most cases, that unit is a function.",28.41,3.03
+0,"With unit tests, we can
+define the requirements",31.44,2.22
+0,for a function in code.,33.66,2.01
+0,"For example, my unit test might validate",35.67,2.04
+0,"that when I call my function
+with the arguments 5 wheat",37.71,2.88
+0,"and 1 ore that I get
+the return value false.",40.59,4.2
+0,"If that assertion is correct
+and I do get back false,",44.79,3.75
+0,then the test passes.,48.54,1.473
+0,"But if we get a different return
+value from the one the test",51.36,3.57
+0,"expects, then the test fails.",54.93,2.733
+0,Teams can automate their unit test to run,59.31,2.19
+0,"anytime someone makes a
+change to the function",61.5,2.64
+0,"and they can block that
+change from being submitted",64.14,2.43
+0,until all the related unit tests pass.,66.57,3.0
+0,This effectively enforces the requirements,69.57,2.79
+0,"so programmers don't
+accidentally break things",72.36,2.49
+0,when they make a change.,74.85,1.89
+0,"Either we fix the function
+to make the unit test pass,",76.74,3.87
+0,or if we thought twice about it,80.61,1.83
+0,and we're confident that it's safe,82.44,1.68
+0,"to change the requirements,
+then we can update the unit test",84.12,3.36
+0,to reflect that new expected behavior,87.48,2.34
+0,"and submit that along
+with our code change.",89.82,2.73
+0,"That way the unit tests
+stay a living contract",92.55,2.64
+0,of the functions requirements.,95.19,2.4
+0,But how do I know which tests to write?,97.59,2.55
+0,"Writing just one test case
+doesn't really do a whole lot",100.14,3.12
+0,because my unit test would still pass,103.26,2.37
+0,"even if my function just
+always returned four.",105.63,3.12
+0,"So I haven't really proven
+anything about my function logic.",108.75,3.96
+0,"I could write a test for
+every possible input value,",112.71,3.39
+0,"but that's probably not the
+most efficient use of my time.",116.1,3.27
+0,"Instead, programmers try and work",119.37,1.59
+0,for a goal of code coverage.,120.96,2.16
+0,"As a whole, we want our test
+cases to execute every possible",123.12,3.6
+0,path of execution through the function.,126.72,2.55
+0,"So we try and identify
+different classes of inputs,",129.27,2.91
+0,and write a test case for each of those.,132.18,2.58
+0,"For example, with our
+get_route_score function",134.76,2.22
+0,we would at least want a test case,136.98,1.65
+0,for each of these conditional branches.,138.63,2.52
+0,So our classes of inputs would be,141.15,1.83
+0,"less than or equal to 2
+trains, 3 trains, 4 trains,",142.98,3.42
+0,and greater than or equal to 5 trains.,146.4,2.49
+0,"With those representative
+inputs we've anticipated",148.89,2.85
+0,and proven out all the reasonable ways,151.74,2.37
+0,that someone might call our function.,154.11,2.37
+0,"Of course, the testing
+process isn't always perfect.",156.48,3.3
+0,"We may miss a test case,",159.78,1.5
+0,"or we might make
+compromises on code coverage",161.28,2.91
+0,in the interest of time.,164.19,1.71
+0,"If we do find a bug later,
+we just wanna make sure",165.9,2.55
+0,we learn from that mistake.,168.45,1.65
+0,So most programming teams will go back in,170.1,2.31
+0,and add a test for that exact failure case,172.41,2.49
+0,"to enforce that the same
+bug never happens twice.",174.9,3.063
+0,"Okay, great, but how do I
+actually write unit tests?",178.86,3.0
+0,"The principles stay the same,",181.86,1.29
+0,but the exact syntax varies,183.15,1.77
+0,"depending on which unit
+testing framework you use.",184.92,2.67
+0,"in Python, many programmers
+use the unittest module",187.59,2.85
+0,or the pytest module.,190.44,1.92
+0,Here's an example test suite,192.36,1.59
+0,written with the unittest framework.,193.95,1.86
+0,"I have seven test cases,",195.81,1.59
+0,"and you can see that they're
+basically all the same.",197.4,2.79
+0,"I only change the name,
+the argument I pass",200.19,2.25
+0,"to the get_route_score function,",202.44,1.2
+0,and the expected result I compare to.,203.64,2.76
+0,"When I run it, I can see",206.4,1.05
+0,that one of my test cases is failing.,207.45,2.25
+0,"It tells me the name of
+the failing test case",209.7,1.92
+0,and the assertion that failed.,211.62,1.86
+0,"Here I got the result -2
+instead of the expected 0.",213.48,3.54
+0,"So I know my function
+must have a bug somewhere",217.02,3.24
+0,because it doesn't work when I call it,220.26,1.83
+0,with a negative argument.,222.09,1.95
+0,"As you can see, a lot of unit testing code",224.04,3.09
+0,is just boilerplate.,227.13,1.86
+0,"That is, the same
+repeated required syntax,",228.99,3.18
+0,"so a lot of programmers
+will just copy and paste",232.17,2.13
+0,the boiler plate.,234.3,1.56
+0,That means the secret to unit testing,235.86,1.62
+0,isn't so much memorizing the syntax,237.48,1.89
+0,"as it is learning how to
+identify interesting test cases.",239.37,3.483
+0,"If you're a beginner programmer
+working independently",243.69,2.4
+0,"just to learn, then I'll be
+honest, it may not be worth it",246.09,4.35
+0,"to write unit tests for all
+your code at this point,",250.44,2.31
+0,"because writing test code
+can often take just as long",252.75,3.06
+0,as it takes to write the program code.,255.81,2.31
+0,"However, it is worth your time
+to think about test cases.",258.12,4.23
+0,"When you write or change a function,",262.35,1.83
+0,"it's a good habit to call it
+with a few different arguments",264.18,3.0
+0,"to verify that it works as expected,",267.18,2.34
+0,"even if you're not automating
+that process with unit tests.",269.52,3.33
+0,"That way as we build out
+the rest of our program,",272.85,2.22
+0,"we can have confidence that
+the individual functions",275.07,2.49
+0,"work correctly and when
+we inevitably encounter",277.56,3.33
+0,"an error later, we can
+rule out those functions",280.89,2.46
+0,as the cause of the bug.,283.35,1.353

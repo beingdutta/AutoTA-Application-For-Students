@@ -1,0 +1,353 @@
+,text,start,duration
+0,"We will now go to the next module which is
+the Perceptron Learning Algorithm.",13.09,4.35
+0,"We now see a more principled approach of learning
+these weights and threshold, but before that",17.44,6.03
+0,"we will just again revisit our movie example
+and make it slightly more complicated.",23.47,3.55
+0,"Now, here what the situation is that we are
+given a list of m movies and a class associated",27.02,7.07
+0,"with each movie indicating whether we like
+the movie or not, right.",34.09,3.33
+0,"So, now we have given some data of the past
+m movies that we have seen and whether we",37.42,4.16
+0,"like this movie or not and now instead of
+these three variables, we have these n different",41.58,4.04
+0,variables based on which we are making decisions.,45.62,3.17
+0,"And notice that some of these variables are
+real, right.",48.79,2.7
+0,"They are not Boolean anymore, right.",51.49,1.81
+0,"The rating could be any real number between
+0 to 1, ok and now based on this data what",53.3,6.419
+0,do we want is the perceptron to do actually.,59.719,2.011
+0,"So, I have given you some data.",61.73,1.78
+0,"These factors I have also given you the label
+1 and 0.",63.51,2.59
+0,"So, if the perceptron if I tell you my perceptron
+has now learnt properly, what would you expected",66.1,5.01
+0,"it to do; perfect match, right.",71.11,1.49
+0,"So, whenever I feed it, one of these movies
+it should give me the same label as was there",72.6,5.04
+0,"in my data, right and again there are some
+movies for which I have a label 1 which are",77.64,4.0
+0,"positive and some movies which I have a label
+0.",81.64,2.41
+0,"So, I am once again looking to separate the
+positives from the negatives, right.",84.05,3.179
+0,"So, it should adjust the weights in such a
+way that I should be able to separate, right.",87.229,3.901
+0,"So, that is the learning problem that we are
+interested in, ok.",91.13,2.69
+0,"So, now with that I will give you the algorithm,
+ok.",93.82,2.43
+0,This is the Perceptron Learning Algorithm.,96.25,2.099
+0,"We have certain positive inputs which had
+the label 1, we have certain negative inputs",98.349,6.431
+0,"which had the label 0 and now I don't know
+what the weights are and I have no prior knowledge",104.78,5.25
+0,of what the weights are going to be.,110.03,1.12
+0,I need to learn them from the data.,111.15,1.62
+0,"So, what I am going to do is, I am just going
+to initialize these weights randomly as I",112.77,3.689
+0,"am also going to pick up some random values
+for this.",116.459,3.231
+0,"So, this should be small n.",119.69,3.599
+0,"So, this should be small n and now, here is
+the algorithm while not convergence do something.",123.289,6.14
+0,"So, before I tell you what to do, can you
+tell me what is meant by convergence?",129.429,4.591
+0,When will you say that it has converged?,134.02,4.08
+0,"When it is not making any more errors on the
+training data, right, or its predictions are",138.1,5.469
+0,not changing on the training data.,143.569,1.431
+0,"So, that is the definition of convergence,
+ok.",145.0,2.48
+0,"Now, here is the algorithm.",147.48,2.089
+0,"I pick up a random from point from my data
+which could either be positive or negative,",149.569,4.06
+0,right.,153.629,1.0
+0,"So, it comes from the union of positive negative.",154.629,1.14
+0,"Basically all the data that I have I pick
+up a random point from there.",155.769,3.711
+0,"If the point is positive, right and this is
+the condition which happens what does this",159.48,7.67
+0,tell me?,167.15,2.25
+0,"If the point was positive, what did I actually
+want greater than 0, but the condition is",169.4,5.07
+0,less than 0.,174.47,1.0
+0,"That means, I have made an error.",175.47,1.129
+0,"So, I have made an error, then I will just
+add x to w I see a lot of thoughtful nodding",176.599,8.59
+0,and I hope you are understanding what is happening.,185.189,1.89
+0,Let us see.,187.079,1.061
+0,"So, what is w actually?",188.14,1.47
+0,a dimensional.,189.61,1.0
+0,N dimension.,190.61,1.0
+0,"N dimension n plus 1, right because w naught
+is also inside there.",191.61,4.359
+0,"So, actually there should be w naught also
+here, right and what is x again n dimensional,",195.969,8.561
+0,right and that is why this addition is valid.,204.53,1.56
+0,"So, let us understand that w and x both are
+n dimensional, ok.",206.09,3.129
+0,"Now, let us look at the other if condition.",209.219,1.871
+0,"Can you guess what the other if condition
+is if x belongs to n and.",211.09,5.36
+0,Summation.,216.45,1.45
+0,"Summation is greater than equal to 0, then?",217.9,2.989
+0,"So, that means you have completely understood
+how this algorithm works.",220.889,4.201
+0,"Well, that is right.",225.09,1.729
+0,"So, now consider two vectors w and x.",226.819,2.54
+0,"So, remember what we are trying to prove is
+or get an intuition.",229.359,2.311
+0,"Not prove, actually get an intuition for why
+this works.",231.67,2.61
+0,ok,234.28,1.0
+0,"So, we will consider two vectors w and x and
+this is what my vectors look like very similar",235.28,3.569
+0,"to the case that we are considering w0 to
+wn and 1 to n.",238.849,3.821
+0,"So, this again x naught is just 1, right.",242.67,3.409
+0,"ok
+Now, this condition that I have been talking",246.079,3.171
+0,"about is nothing, but the dot product.",249.25,4.379
+0,"How many of you have gone through the prerequisites
+for today's lecture?",253.629,3.241
+0,Ok good.,256.87,1.0
+0,"So, it is just a dot product, ok.",257.87,4.119
+0,"Now, we can just read write the perceptron
+rule as this instead of the dot product.",261.989,4.611
+0,"I mean instead of using that summation thing,
+we can just say that it is a dot product.",266.6,4.11
+0,"ok
+Now, we are interested in finding the line",270.71,3.489
+0,w transpose x equal to 0.,274.199,1.511
+0,"So, that is our decision boundary, right?
+which divides the input into two halves, ok.",275.71,4.87
+0,"Now, every point on this line satisfies the
+equation w transpose x equal to 0.",280.58,5.01
+0,What does that mean actually?,285.59,2.49
+0,"So, just a simple example is that if I have
+the line x1 plus x2 equal to 0, then all the",288.08,8.12
+0,"points which lie on the line satisfy this
+equation, right.",296.2,2.16
+0,"So, you could have 1 minus 1, 2 minus 2 and
+so on, but 2, 2 is cannot be a point on this",298.36,5.94
+0,line.,304.3,1.0
+0,"At every point lying on this line satisfies
+this equation.",305.3,1.88
+0,"So, every point lying on this line actually
+satisfies the equation w transpose x equal",307.18,4.7
+0,to 0.,311.88,1.319
+0,"So, can you tell me what is the angle between
+w and any point on this line?",313.199,5.761
+0,How many say how many of you say perpendicular?,318.96,4.32
+0,Ok.,323.28,1.53
+0,Why?,324.81,1.53
+0,"Dot product is 0, right.",326.34,1.0
+0,"So, if the dot product is 0, they are orthogonal
+right.",327.34,2.68
+0,"So, that means if I take this line, then my
+vector w is orthogonal to this.",330.02,5.5
+0,"It is orthogonal to this point or this point
+to this point to every point on the line which",335.52,4.57
+0,"is just the same as saying that the vector
+is perpendicular to the line itself, right",340.09,3.96
+0,as simple as that.,344.05,1.85
+0,"So, the angle is 90 degrees because the dot
+product gives you the cos alpha and that is",345.9,5.739
+0,"0, right and since it is perpendicular as
+I said to every point of the line it is just",351.639,4.451
+0,"perpendicular to the line itself, right.",356.09,1.82
+0,"So, this is what the geometric interpretation
+looks like.",357.91,2.9
+0,"This is our decision boundary w transpose
+x and the vector w is actually orthogonal",360.81,7.039
+0,"to this line and that is exactly the intuition
+that we have built so far.",367.849,4.06
+0,"ok
+Now, let us consider some points which are",371.909,3.181
+0,"supposed to lie in the positive half space
+of this line, right.",375.09,3.229
+0,"That means these are the points for which
+the output is actually 1, ok.",378.319,5.331
+0,"Now, can you tell me what is the angle between
+any of these points and w or you guys are",383.65,7.65
+0,"actually trying to tell me the angle we have
+got some measuring stuff, no.",391.3,4.179
+0,"So, I will give you three options i.e. equal
+to 90, greater than 90 and less than 90.",395.479,5.851
+0,Less than 90.,401.33,1.0
+0,"Less than 90 it is obvious from the figure,
+right.",402.33,1.35
+0,"Now, if I take any point which lies in the
+negative half space, what is the angle going",403.68,7.34
+0,to be between them?,411.02,1.03
+0,"It is greater than 90, right.",412.05,2.44
+0,"Again obvious and it also follows from the
+fact that cos alpha is w transpose x by something",414.49,8.209
+0,"and we know that for the positive points w
+transpose x is greater than equal to 0, right.",422.699,7.341
+0,"That means, cos alpha would be greater than
+equal to 0, that means the angle alpha would",430.04,4.15
+0,"be less than 90 degrees and for the negative
+points w transpose x is actually less than",434.19,4.91
+0,0.,439.1,1.0
+0,"That means, cos alpha would be less than 0
+that means alpha would be greater than 90",440.1,3.349
+0,"degrees, right.",443.449,1.0
+0,"So, it actually follows from the formula itself,
+but it is also clear from the figure.",444.449,3.081
+0,"So, keeping this picture in mind let us revisit
+the algorithm, ok.",447.53,5.19
+0,"So, this is the algorithm, ok.",452.72,2.35
+0,"Now, let us look at the first condition which
+was this.",455.07,4.599
+0,"Now, if x belongs to p and w transpose x is
+less than 0, then means that the angle between",459.669,7.47
+0,"x and the current w is actually greater than
+90 degrees, but what do we want it to be?",467.139,5.851
+0,"Less than 90 degrees and our solution to do
+this is, but we still do not know why this",472.99,5.57
+0,works?,478.56,1.0
+0,"Now, anyone knows why this works?",479.56,1.15
+0,"So, let us see why this works.",480.71,3.079
+0,"So, what is the new cos alpha going to be?",483.789,2.68
+0,"It is going to be proportional to this, right.",486.469,3.161
+0,It is going to be proportional to this.,489.63,2.249
+0,"I will just substitute what w new is, fine.",491.879,6.1
+0,"That means, if cos alpha new is going to be
+greater than cos alpha, what is alpha new",497.979,5.881
+0,going to be?,503.86,1.0
+0,"It will be less than and that is exactly what
+we wanted.",504.86,2.529
+0,This angle was actually greater than 90 degrees.,507.389,2.06
+0,"So, you want to slowly move it such that it
+becomes less than 90 degrees.",509.449,3.601
+0,"It is not going to get solved in one iteration
+and that is why till convergence.",513.05,3.67
+0,"So, we will keep doing this.",516.72,1.23
+0,"I will keep picking xs again and again till
+it reaches convergence.",517.95,3.83
+0,"That means, till we are satisfied with that
+condition, right.",521.78,2.75
+0,"Let us look at the other condition x belongs
+to n and w transpose x was greater than equal",524.53,5.99
+0,"to 0, then it means that the angle alpha is
+actually less than 90 degrees and we want",530.52,6.76
+0,"it to be the opposite, ok.",537.28,1.62
+0,"I will just quickly skim over this w minus
+this x, right.",538.9,5.32
+0,"Ok I forgot to mention that this is actually
+a positive quantity, right.",544.22,3.46
+0,"I mean that is why that result holds, ok.",547.68,3.19
+0,"That means, cos alpha new is going to be less
+than cos alpha and this slight bit of mathematical",550.87,6.48
+0,"in correctness, I am doing here, but that
+does not affect the final result.",557.35,5.29
+0,"So, I will just gloss over that and you can
+go home and figure it out, but still it does",562.64,4.76
+0,"not take away from the final intuition and
+interpretation, right.",567.4,2.99
+0,"So, now the new cos alpha is going to be less
+than the original cos alpha; that means, the",570.39,5.5
+0,"angle is going to be greater and that exactly
+what we wanted, ok.",575.89,3.71
+0,"So, we will now see this algorithm in action
+for a toy data set.",579.6,4.16
+0,"So, this is the toy data set we have and we
+have initialized w to a random value and that",583.76,5.31
+0,"turns out to be this, right.",589.07,1.34
+0,"I just picked up some random value for w and
+ended up with this particular configuration",590.41,4.61
+0,"for w. ok
+Now, we observe that currently w transpose",595.02,7.81
+0,"x is less than 0 for all the positive points
+and it is actually greater than equal to 0",602.83,5.33
+0,for all the negative points.,608.16,1.0
+0,"If you do not understand w transpose x, it
+is just that the all the positive angle points",609.16,4.43
+0,"actually have a greater than 90 degree angle
+and all the negative points actually have",613.59,3.74
+0,a less than 90 degree angle.,617.33,1.02
+0,"So, this is exactly opposite of the situation
+that we want and now from here on, we want",618.35,4.82
+0,"to actually run the perceptron algorithm,
+right and try to fix this w.",623.17,4.9
+0,How does it work?,628.07,2.71
+0,"Remember we randomly pick a point, ok.",630.78,1.86
+0,"So, say we pick the point p1, do we need to
+apply a correction?",632.64,4.72
+0,Yes.,637.36,1.0
+0,Yes.,638.36,1.0
+0,"Why, because it is a positive point and the
+condition is violated, right.",639.36,3.35
+0,"So, now we add w equal to w plus x and we
+get this new w.",642.71,5.48
+0,"So, notice that we have a new w, ok.",648.19,2.33
+0,"We again repeat this, we again pick a new
+point and this time we have picked p2.",650.52,5.81
+0,Do we need a correction?,656.33,1.08
+0,Yes.,657.41,1.0
+0,"At least from the figure it looks like the
+angle is greater than 90, right.",658.41,2.1
+0,"So, we will again do a correction.",660.51,1.4
+0,"We will add w is equal to w plus p, right.",661.91,2.69
+0,"This x is actually, sorry p2 and this is where
+we end up, ok.",664.6,6.06
+0,"Now, again we pick a point randomly n1.",670.66,4.01
+0,Do we need a correction?,674.67,1.36
+0,"So, this is what our w is.",676.03,2.65
+0,"This line here and n1, right.",678.68,3.16
+0,"So, we need a correction, ok.",681.84,2.46
+0,"Now, what is the correction going to be?",684.3,1.161
+0,"It will be minus and then, the w changes,
+ok.",685.461,5.379
+0,"Now, we pick another point n3.",690.84,2.28
+0,Do we need a correction?,693.12,1.23
+0,"No at least on the figure it seems like the
+angle is greater than 90 and we continue this,",694.35,4.73
+0,right.,699.08,1.0
+0,"For n2, we do not need a correction.",700.08,2.4
+0,"Now, for p3 again we do not need a correction.",702.48,2.15
+0,The angle looks less than 90.,704.63,2.49
+0,Sorry actually it is we need a correction.,707.12,1.151
+0,"The angle is slightly greater than 90 and
+this is our correction, and now we keep cycling.",708.271,4.999
+0,"Now, as I keep cycling over the points, I
+realize that I no longer need any correction.",713.27,4.7
+0,"It should be obvious from the figure that
+for this particular value of w, now all my",717.97,4.81
+0,"positive points are making an angle less than
+90 and all my negative points are actually",722.78,4.07
+0,making an angle greater than 90.,726.85,1.97
+0,"That means, by definition now my algorithm
+has converged, right.",728.82,3.72
+0,"So, I can just stop it.",732.54,1.64
+0,"So, I can just make one pass over the data.",734.18,1.76
+0,"If nothing changes, I will just say it has
+converged, ok.",735.94,3.6
+0,"Now, does anyone see a problem with this?",739.54,4.08
+0,Never converge.,743.62,1.0
+0,It will never converge in some cases.,744.62,1.0
+0,"So, can someone tell me why?",745.62,1.0
+0,"We are considering only cases where the data
+is linearly separable, right.",746.62,5.27
+0,That we already assumed.,751.89,1.17
+0,"So, what you are trying to tell me is that
+you are going over these points cyclically.",753.06,3.35
+0,"So, let me just rephrase and put words in
+your mouth that what you are trying to tell",756.41,4.32
+0,"me actually is that I take a point, I adjust
+w, but now for the next point I maybe go back",760.73,6.31
+0,"to the same w because that point asked me
+to move it again and I keep doing this again",767.04,3.75
+0,"and again and basically, end up nowhere, right.",770.79,3.16
+0,That is why this will never converge.,773.95,1.96
+0,"That is exactly what you are trying to tell
+me, right.",775.91,2.03
+0,"Now, that is exactly what I am forcing you
+to tell me.",777.94,3.03
+0,"So, that is not the case, right.",780.97,1.98
+0,This algorithm will converge.,782.95,1.28
